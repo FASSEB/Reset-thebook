@@ -74,16 +74,9 @@ a {
         gap: 1rem;
         width: 300px;
 
-        .jumbo-supertitle {
-            text-transform: uppercase;
-            font-size: 0.8em;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
-
         .jumbo-title {
             color: #000;
-            font-size: 3.5rem;
+            font-size: 1.25rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
