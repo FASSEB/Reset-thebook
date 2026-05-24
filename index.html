@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reset The Book</title>
+    <title>Reset The Book - Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,36 +13,66 @@
 
         <div class="nav-links">
             <a class="nav-link" href="#books">Books</a>
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#about">About</a>
         </div>
 
-        <a class="nav-link" style="font-weight: 700;" href="#about">About</a>
+        <div></div>
     </nav>
     
     <header class="jumbo back-light">
         <div class="jumbo-text">
-            <h1 class="jumbo-title">Download Chapter 1 of <span style="font-style: italic;">Reset</span></h1>
+            <h1 class="jumbo-title">Reset</h1>
+            <p><span class="fw-bold">Reset: Restore you Natural Energy from Within</span> blends modern neuroscience, functional biology, and ancient healing systems such as Taoist practices, going far beyond surface-level welness advice.</p>
 
-            <p class="jumbo-description">The system to heal your body from chronic stress, anxiety & depression.</p>
+            <p class="fw-bold">Inside this book you will learn how to:</p>
+            <ul class="custom-bullet ps-3">
+                <li><span class="dot">•</span> Reset your circadian rhythm.</li>
+                <li><span class="dot">•</span> Calm down your nervous system.</li>
+                <li><span class="dot">•</span> Release tension throught movement.</li>
+                <li><span class="dot">•</span> The power of Self-Talk.</li>
+                <li><span class="dot">•</span> Heal the gut/brain connection.</li>
+            </ul>
 
-            <div class="jumbo-cta input-group">
-                <input type="text" for="cta" class="form-control" placeholder="Enter your email">
-                <button class="btn btn-primary" type="button" id="cta">Download</button>
+            <div class="buy-links">
+                <a class="btn btn-outline-primary" href="https://payhip.com/b/7HCW0" target="_blank">
+                    <img style="height: 25px" src="./img/payhip.PNG" alt="PayHip logo">
+                </a>
+                <a class="btn btn-outline-primary" href="https://133028268700.gumroad.com/l/vonsei" target="_blank">
+                    <img style="height: 10px" src="./img/gumroad.PNG" alt="Gumroad logo">
+                </a>
             </div>
         </div>
 
         <img class="jumbo-image img-fluid" src="img/cover-3d-transparent.png" alt="book">
     </header>
 
-    <!-- MAIN SECTION WILL BE HERE -->
+    <div class="cta-email text-center back-light" id="books">
+        <p class="fw-bold">Download Chapter 1 of <span class="fst-italic text-uppercase">Reset</span> for free!</p>
+        
+        <div class="input-group mt-3" style="max-width: 400px; margin: 0 auto;">
+            <input type="text" class="form-control" placeholder="Your email address">
+            <button class="btn btn-primary" type="button">Download</button>
+        </div>
+    </div>
+
+    <div class="about-me back-blue" id="about">
+        <div class="about-me-split">
+            <img class="img-fluid" src="./img/sebastiano-fassina.jpeg" alt="Sebastiano's photo">
+            
+            <div>
+                <h2 class="fs-2 mb-3">About Sebastiano Fassina</h2>
+                <p>My journey into health and wellness began with a life-changing diagnosis of Type 1 Diabetes at age 21. Driven by a deep desire for healing, I immersed himself in studying nutrition, neuroscience, and ancient healing methods. Living and working across Italy, Australia, and Canada, I crafted a holistic health approach focused on rhythm, resilience, and the body's natural intelligence. My book, RESET: Restore Your Natural Energy from Within, invites readers to reconnect with their innate energy and rediscover vibrant health in a modern world. Through my experiences, I aim to inspire and support others on their wellness journeys.</p>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer back-dark">
         <p class="footer-copy text-center">&copy; 2026 Sebastiano Fassina</p>
         
         <div class="footer-links">
-            <a href="#">Privacy Conditions</a>
+            <a href="./privacy.html" target="_blank">Privacy Policy</a>
             <span>|</span>
-            <a href="#">Terms of Use</a>
+            <span>Designed by <a href="https://federicotrotta.dev" target="_blank">Federico Trotta</a></span>
         </div>
     </footer>
 
