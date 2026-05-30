@@ -174,6 +174,7 @@ a {
 
 .cta-email {
     padding: 0 2rem 3.5rem 2rem;
+    font-size: 1.3rem;
 }
 
 .about-me {
@@ -208,82 +209,6 @@ a {
         justify-content: center;
         gap: 1rem;
         font-size: 0.9rem;
-    }
-}
-
-.mdl-outer {
-    display: none;
-    place-items: center;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    backdrop-filter: blur(5px);
-    z-index: 10;
-    padding: 1rem;
-
-    .mdl-inner {
-        .success {
-            position: relative;
-            display: none;
-
-            text-align: center;
-            background: #aeecae;
-            padding: 2rem;
-            border: 1px solid #ffff;
-            border-radius: 8px;
-
-            .success-emoji {
-                font-size: 4rem;
-                margin-bottom: 1.5rem;
-            }
-
-            .success-msg {
-                font-size: 1.5rem;
-                max-width: 375px;
-                line-height: 1.3;
-                font-weight: 700;
-            }
-
-            .btn-close {
-                position: absolute;
-                top: 8px;
-                right: 8px;
-                font-size: 1.5rem;
-                cursor: pointer;
-            }
-        }
-        
-        .failure {
-            position: relative;
-            display: none;
-
-            text-align: center;
-            background: #ffc1c1;
-            padding: 2rem;
-            border: 1px solid #ffff;
-            border-radius: 8px;
-
-            .failure-emoji {
-                font-size: 4rem;
-                margin-bottom: 1.5rem;
-            }
-
-            .failure-msg {
-                font-size: 1.5rem;
-                max-width: 375px;
-                line-height: 1.3;
-                font-weight: 700;
-            }
-
-            .btn-close {
-                position: absolute;
-                top: 8px;
-                right: 8px;
-                font-size: 1.5rem;
-                cursor: pointer;
-            }
-        }
     }
 }
 
@@ -334,3 +259,22 @@ a {
         text-align: center;
     }
 }
+
+/* start Brevo form styles */
+#sib-form-container {
+    display: grid !important;
+    justify-items: center !important;
+}
+#sib-container {
+    background: #0000 !important;
+}
+.sib-form {
+    padding: 0 !important;
+}
+.sib-form .entry__field {
+    margin: 0 !important;
+}
+.sib-form-message-panel {
+    margin: 0 !important;
+}
+/* end Brevo form styles */
