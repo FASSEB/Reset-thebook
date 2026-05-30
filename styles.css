@@ -5,6 +5,7 @@ body {
     color: #444;
     background-color: #000;
     line-height: 1.4;
+    margin: 0;
 }
 
 a {
@@ -39,6 +40,10 @@ a {
 
     a:hover {
         box-shadow: inset 0 -2px 0 0 #4442;
+        &.btn {
+            box-shadow: inset 0 -2px 0 0 #4442, 0 7px 22px 0 #0005;
+        }
+        transform: translateY(-5px);
     }
 }
 
@@ -53,6 +58,10 @@ a {
 
     a:hover {
         box-shadow: inset 0 -2px 0 0 #4442;
+        &.btn {
+            box-shadow: inset 0 -2px 0 0 #4442, 0 7px 22px 0 #0005;
+        }
+        transform: translateY(-5px);
     }
 }
 
@@ -67,28 +76,32 @@ a {
 
     a:hover {
         box-shadow: inset 0 -2px 0 0 #fffa;
+        &.btn {
+            box-shadow: inset 0 -2px 0 0 #fffa, 0 7px 22px 0 #fff5;
+        }
+        transform: translateY(-5px);
     }
 }
 
-.nav {
+.navb {
     padding: 2.5rem 3.5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
 
-    .nav-name {
+    .navb-name {
         text-transform: uppercase;
         font-weight: 700;
         letter-spacing: 1px;
     }
 
-    .nav-links {
+    .navb-links {
         justify-self: center;
         display: flex;
         gap: 2rem;
     }
 
-    .nav-link {
+    .navb-link {
         padding: 0.5rem;
         font-weight: 700;
     }
@@ -135,9 +148,18 @@ a {
         gap: 1rem;
         margin-top: 1rem;
 
-        a {
+        a.btn {
             display: inline-flex;
             align-items: center;
+            background: #fff;
+
+            .btn-img-payhip {
+                height: 25px;
+            }
+
+            .btn-img-gumroad {
+                height: 10px;
+            }
         }
     }
 }
@@ -178,5 +200,53 @@ a {
         justify-content: center;
         gap: 1rem;
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hidden-mobile {
+        display: none;
+    }
+
+    .navb {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .jumbo {
+        flex-direction: column-reverse;
+
+        .jumbo-text {
+            width: 300px;
+        }
+
+        .buy-links {
+            flex-direction: column;
+            align-items: center;
+
+            a.btn {
+                justify-content: center;
+                min-height: 60px;
+                width: 200px;
+                padding: 12px 6px;
+
+                .btn-img-payhip {
+                    height: 30px;
+                }
+
+                .btn-img-gumroad {
+                    height: 15px;
+                }
+            }
+        }
+    }
+
+    .about-me-split {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
     }
 }
