@@ -120,7 +120,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 3.5rem;
-    padding: 0 3.5rem 3rem 3.5rem;
+    padding: 0 3.5rem 5rem 3.5rem;
 
     .jumbo-text {
         display: flex;
@@ -259,32 +259,3 @@ a {
         text-align: center;
     }
 }
-
-/* start Brevo form styles */
-.brevo-email-form {
-    display: flex;
-    align-items: center;
-}
-@media (max-width: 768px) {
-    .brevo-email-form {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-}
-#sib-form-container {
-    display: grid !important;
-    justify-items: center !important;
-}
-#sib-container {
-    background: #0000 !important;
-}
-.sib-form {
-    padding: 0 !important;
-}
-.sib-form .entry__field {
-    margin: 0 !important;
-}
-.sib-form-message-panel {
-    margin: 0 !important;
-}
-/* end Brevo form styles */
