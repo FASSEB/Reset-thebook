@@ -1,5 +1,14 @@
 <footer class="footer back-dark">
     <p class="footer-copy text-center">&copy; 2026 Sebastiano Fassina</p>
+
+    <div class="footer-socials">
+        <a href="https://www.instagram.com/reset_thebook/" target="_blank">
+            <i class="bi bi-instagram"></i> Instagram
+        </a>
+        <a href="https://www.facebook.com/sebastiano.fassina" target="_blank">
+            <i class="bi bi-facebook"></i> Facebook
+        </a>
+    </div>
     
     <div class="footer-links">
         <a href="./privacy.html" target="_blank">Privacy Policy</a>
@@ -19,6 +28,14 @@
             text-transform: uppercase;
         }
 
+        .footer-socials {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            font-size: 0.9rem;
+            margin-block: 1rem;
+        }
+
         .footer-links {
             display: flex;
             justify-content: center;
@@ -31,6 +48,10 @@
         .footer-links {
             flex-direction: column;
             text-align: center;
+        }
+
+        .footer-socials {
+            flex-direction: column;
         }
     }
 </style>
