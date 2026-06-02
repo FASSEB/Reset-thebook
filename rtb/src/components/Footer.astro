@@ -1,0 +1,36 @@
+<footer class="footer back-dark">
+    <p class="footer-copy text-center">&copy; 2026 Sebastiano Fassina</p>
+    
+    <div class="footer-links">
+        <a href="./privacy.html" target="_blank">Privacy Policy</a>
+        <span class="hidden-mobile">|</span>
+        <a href="https://federicotrotta.dev" target="_blank">Designed by Federico Trotta</a>
+    </div>
+</footer>
+
+<style>
+    .footer {
+        padding: 2rem 3.5rem;
+
+        .footer-copy {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .footer-links {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>

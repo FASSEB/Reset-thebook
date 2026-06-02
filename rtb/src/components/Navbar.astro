@@ -1,0 +1,45 @@
+---
+---
+<nav class="navb back-light">
+    <div class="navb-name">Sebastiano Fassina</div>
+
+    <div class="navb-links">
+        <a class="navb-link" href="/#books">Books</a>
+        <a class="navb-link" href="/#about">About</a>
+    </div>
+
+    <div></div>
+</nav>
+
+<style>
+    .navb {
+        padding: 2.5rem 3.5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+
+        .navb-name {
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .navb-links {
+            justify-self: center;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .navb-link {
+            padding: 0.5rem;
+            font-weight: 700;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .navb {
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+    }
+</style>
