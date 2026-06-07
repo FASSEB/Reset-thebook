@@ -20,11 +20,20 @@ const {
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-96x96.png">
 
+        <!-- Facebook Meta Tags -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://resetthebook.com">
         <meta property="og:title" content={ogtitle} />
         <meta property="og:description" content={ogdescription} />
         <meta property="og:image" content={ogimageurl} />
-        <meta property="og:url" content="https://resetthebook.com">
-        <meta property="og:type" content="website">
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:domain" content="resetthebook.com">
+        <meta property="twitter:url" content="https://resetthebook.com/">
+        <meta name="twitter:title" content={ogtitle}>
+        <meta name="twitter:description" content={ogdescription}>
+        <meta name="twitter:image" content={ogimageurl}>
     </head>
     <body>
         <slot />
