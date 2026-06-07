@@ -15,6 +15,15 @@
         </ul>
 
         <div class="buy-links">
+            <a class="btn btn-outline-primary" href="https://www.amazon.it/Reset-restore-natural-within-depression/dp/B0H383Z16H" target="_blank">
+                <img class="btn-img-amazon" src="./img/amazon.png" alt="Amazon logo">
+            </a>
+            <a class="btn btn-outline-primary" href="https://www.barnesandnoble.com/w/reset-sebastiano-fassina/1150325950?ean=2940184924038" target="_blank">
+                <img class="btn-img-bnn" src="./img/barnesnoble.png" alt="Barnes & Noble logo">
+            </a>
+            <a class="btn btn-outline-primary" href="https://www.kobo.com/us/en/ebook/reset-restore-your-natural-energy-from-within?sId=6a5291c8-7ab9-42ef-8468-07efee33f745&ssId=9vJkNCDtFAzyx4qBSzl5G&cPos=1" target="_blank">
+                <img class="btn-img-kobo" src="./img/kobo.png" alt="Kobo logo">
+            </a>
             <a class="btn btn-outline-primary" href="https://payhip.com/b/7HCW0" target="_blank">
                 <img class="btn-img-payhip" src="./img/payhip.png" alt="PayHip logo">
             </a>
@@ -65,6 +74,7 @@
 
         .buy-links {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             gap: 1rem;
             margin-top: 1rem;
@@ -73,6 +83,19 @@
                 display: inline-flex;
                 align-items: center;
                 background: #fff;
+                height: 40px;
+
+                .btn-img-amazon {
+                    height: 21px;
+                }
+
+                .btn-img-bnn {
+                    height: 19px;
+                }
+
+                .btn-img-kobo {
+                    height: 19px;
+                }
 
                 .btn-img-payhip {
                     height: 25px;
@@ -103,12 +126,24 @@
                     width: 200px;
                     padding: 12px 6px;
 
+                    .btn-img-amazon {
+                        height: 35px;
+                    }
+
+                    .btn-img-bnn {
+                        height: 25px;
+                    }
+
+                    .btn-img-kobo {
+                        height: 33px;
+                    }
+
                     .btn-img-payhip {
-                        height: 30px;
+                        height: 39px;
                     }
 
                     .btn-img-gumroad {
-                        height: 15px;
+                        height: 20px;
                     }
                 }
             }
