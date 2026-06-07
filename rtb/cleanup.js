@@ -4,8 +4,7 @@ import url from 'url';
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
-const argv = process.argv.slice(2);
-const rootDir = argv[0] ? path.resolve(argv[0]) : process.cwd();
+const rootDir = path.resolve(__dirname, '..');
 
 const keepList = [
   // Edit this list to match files or directories you want to keep.

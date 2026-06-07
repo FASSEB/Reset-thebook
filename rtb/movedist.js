@@ -3,7 +3,7 @@ import path from 'path';
 
 const rootDir = path.dirname(new URL(import.meta.url).pathname.replace(/^\//, ''));
 const distDir = path.join(rootDir, 'dist');
-const targetDir = rootDir;
+const targetDir = path.dirname(rootDir);
 
 async function moveEntry(source, destination) {
   try {
