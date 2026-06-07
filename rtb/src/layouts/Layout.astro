@@ -1,5 +1,10 @@
 ---
-const { title = "Reset The Book" } = Astro.props; // Assign a default title
+const {
+    title = "Reset The Book",
+    ogtitle = "RESET: Restore Your Natural Energy From Within",
+    ogdescription = "Discover the transformative power of 'RESET: Restore Your Natural Energy From Within'",
+    ogimageurl = "https://www.resetthebook.com/img/og.png"
+} = Astro.props; // Assign a default title
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +19,12 @@ const { title = "Reset The Book" } = Astro.props; // Assign a default title
         <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-96x96.png">
+
+        <meta property="og:title" content={ogtitle} />
+        <meta property="og:description" content={ogdescription} />
+        <meta property="og:image" content={ogimageurl} />
+        <meta property="og:url" content="https://resetthebook.com">
+        <meta property="og:type" content="website">
     </head>
     <body>
         <slot />
